@@ -1,0 +1,265 @@
+{
+  "posts": [
+    {
+      "_id": "post1",
+      "title": "Refund Denied After Receiving Damaged Product",
+      "description": "I ordered a laptop from ABC Electronics online store. When it arrived, the screen was cracked. I immediately contacted their customer service and they promised a refund within 7 days. It's been 3 months now and they keep giving excuses. They stopped responding to my emails last month. I have all the screenshots and email conversations as evidence.",
+      "images": ["evidence1.jpg", "evidence2.jpg", "chat_screenshot.png"],
+      "category": "REFUND_FRAUD",
+      "authorId": "user1",
+      "fraudEntityId": "entity1",
+      "status": "APPROVED",
+      "likes": 45,
+      "dislikes": 3,
+      "commentCount": 12,
+      "createdAt": "2025-12-15T10:30:00Z",
+      "fraudEntity": {
+        "_id": "entity1",
+        "name": "ABC Electronics",
+        "fraudScore": 82
+      }
+    },
+    {
+      "_id": "post2",
+      "title": "Never Received Order Despite Payment Confirmation",
+      "description": "Paid $500 for a smartphone on QuickMart. Order status showed 'shipped' but tracking number was fake. Company website is now offline. Multiple people have reported the same issue on social media. This appears to be a well-organized scam operation.",
+      "images": ["payment_receipt.jpg", "fake_tracking.png"],
+      "category": "DELIVERY_SCAM",
+      "authorId": "user2",
+      "fraudEntityId": "entity2",
+      "status": "APPROVED",
+      "likes": 89,
+      "dislikes": 2,
+      "commentCount": 34,
+      "createdAt": "2025-12-10T14:20:00Z",
+      "fraudEntity": {
+        "_id": "entity2",
+        "name": "QuickMart Online",
+        "fraudScore": 95
+      }
+    },
+    {
+      "_id": "post3",
+      "title": "Counterfeit Products Sold as Genuine",
+      "description": "Bought what was advertised as an original branded watch for $300. Upon inspection by an authorized dealer, it was confirmed to be a counterfeit worth maybe $20. The seller refuses to accept returns and has blocked me on all platforms.",
+      "images": ["watch_photo.jpg", "authentication_report.pdf"],
+      "category": "FAKE_PRODUCT",
+      "authorId": "user3",
+      "fraudEntityId": "entity3",
+      "status": "APPROVED",
+      "likes": 67,
+      "dislikes": 5,
+      "commentCount": 28,
+      "createdAt": "2025-12-08T09:15:00Z",
+      "fraudEntity": {
+        "_id": "entity3",
+        "name": "LuxuryDeals BD",
+        "fraudScore": 78
+      }
+    },
+    {
+      "_id": "post4",
+      "title": "Investment Scheme Turned Out to Be Ponzi",
+      "description": "Was promised 20% monthly returns on investment. First two months they paid. Then suddenly the company disappeared. Lost $5000 in total. They had a professional looking website and office. Found out later many others lost money too.",
+      "images": ["contract.jpg", "payment_proof.png", "office_photo.jpg"],
+      "category": "PAYMENT_FRAUD",
+      "authorId": "user4",
+      "fraudEntityId": "entity4",
+      "status": "APPROVED",
+      "likes": 156,
+      "dislikes": 8,
+      "commentCount": 67,
+      "createdAt": "2025-11-25T16:45:00Z",
+      "fraudEntity": {
+        "_id": "entity4",
+        "name": "GrowWealth Investments",
+        "fraudScore": 98
+      }
+    },
+    {
+      "_id": "post5",
+      "title": "Unauthorized Charges After Subscription Cancellation",
+      "description": "Cancelled my subscription to StreamPlus service 6 months ago. They're still charging my card monthly. Customer service claims they have no record of cancellation despite me having email confirmation. Had to block the card.",
+      "images": ["cancellation_email.png", "bank_statement.jpg"],
+      "category": "PAYMENT_FRAUD",
+      "authorId": "user5",
+      "fraudEntityId": "entity5",
+      "status": "APPROVED",
+      "likes": 34,
+      "dislikes": 1,
+      "commentCount": 15,
+      "createdAt": "2026-01-05T11:00:00Z",
+      "fraudEntity": {
+        "_id": "entity5",
+        "name": "StreamPlus Services",
+        "fraudScore": 65
+      }
+    }
+  ],
+  "pendingPosts": [
+    {
+      "_id": "pending1",
+      "title": "Fake Job Offer Scam",
+      "description": "Received a job offer requiring upfront payment for 'training materials'. After paying $200, they disappeared.",
+      "images": ["job_offer.png"],
+      "category": "OTHER",
+      "authorId": "user6",
+      "fraudEntityId": "entity6",
+      "status": "PENDING",
+      "likes": 0,
+      "dislikes": 0,
+      "commentCount": 0,
+      "createdAt": "2026-01-14T08:30:00Z",
+      "fraudEntity": {
+        "_id": "entity6",
+        "name": "TechHire Solutions"
+      }
+    },
+    {
+      "_id": "pending2",
+      "title": "Online Course Never Delivered",
+      "description": "Paid for a comprehensive web development course. Only received first 2 modules. Rest were promised 'coming soon' for 8 months.",
+      "images": ["payment_receipt.jpg", "course_page.png"],
+      "category": "FAKE_PRODUCT",
+      "authorId": "user7",
+      "fraudEntityId": "entity7",
+      "status": "PENDING",
+      "likes": 0,
+      "dislikes": 0,
+      "commentCount": 0,
+      "createdAt": "2026-01-13T15:20:00Z",
+      "fraudEntity": {
+        "_id": "entity7",
+        "name": "CodeMaster Academy"
+      }
+    }
+  ],
+  "fraudEntities": [
+    {
+      "_id": "entity1",
+      "name": "ABC Electronics",
+      "email": "support@abcelectronics.com",
+      "phone": "01712345678",
+      "address": "Dhaka, Bangladesh",
+      "verified": false,
+      "totalReports": 25,
+      "fraudScore": 82,
+      "fraudPatterns": {
+        "REFUND_FRAUD": 14,
+        "DELIVERY_SCAM": 7,
+        "FAKE_PRODUCT": 4
+      },
+      "aiSummary": "Most complaints involve refund manipulation and delayed deliveries. Pattern suggests intentional customer service obstruction.",
+      "lastUpdated": "2026-01-10T12:00:00Z"
+    },
+    {
+      "_id": "entity2",
+      "name": "QuickMart Online",
+      "email": "info@quickmart.com",
+      "phone": "01898765432",
+      "address": "Unknown",
+      "verified": false,
+      "totalReports": 89,
+      "fraudScore": 95,
+      "fraudPatterns": {
+        "DELIVERY_SCAM": 67,
+        "PAYMENT_FRAUD": 22
+      },
+      "aiSummary": "Highly suspicious operation. Website frequently changes domains. Most victims report fake tracking numbers and complete non-delivery.",
+      "lastUpdated": "2026-01-12T09:30:00Z"
+    },
+    {
+      "_id": "entity3",
+      "name": "LuxuryDeals BD",
+      "email": "sales@luxurydeals.com",
+      "phone": "01555123456",
+      "address": "Chittagong, Bangladesh",
+      "verified": false,
+      "totalReports": 34,
+      "fraudScore": 78,
+      "fraudPatterns": {
+        "FAKE_PRODUCT": 28,
+        "REFUND_FRAUD": 6
+      },
+      "aiSummary": "Specializes in selling counterfeit luxury goods. Products are low-quality replicas marketed as genuine items.",
+      "lastUpdated": "2026-01-08T14:15:00Z"
+    },
+    {
+      "_id": "entity4",
+      "name": "GrowWealth Investments",
+      "email": "invest@growwealth.com",
+      "phone": "01611222333",
+      "address": "Gulshan, Dhaka",
+      "verified": false,
+      "totalReports": 156,
+      "fraudScore": 98,
+      "fraudPatterns": {
+        "PAYMENT_FRAUD": 120,
+        "IDENTITY_THEFT": 36
+      },
+      "aiSummary": "Classic Ponzi scheme operation. Initial payouts used to attract more victims. Company dissolved after collecting substantial funds.",
+      "lastUpdated": "2025-12-01T00:00:00Z"
+    },
+    {
+      "_id": "entity5",
+      "name": "StreamPlus Services",
+      "email": "support@streamplus.com",
+      "phone": "01700111222",
+      "address": "Online Only",
+      "verified": true,
+      "totalReports": 15,
+      "fraudScore": 65,
+      "fraudPatterns": {
+        "PAYMENT_FRAUD": 12,
+        "REFUND_FRAUD": 3
+      },
+      "aiSummary": "Issues primarily related to billing disputes and difficult cancellation process. May be intentional dark patterns.",
+      "lastUpdated": "2026-01-05T16:00:00Z"
+    }
+  ],
+  "comments": [
+    {
+      "_id": "comment1",
+      "postId": "post1",
+      "userId": "user10",
+      "comment": "I had the exact same experience! They kept delaying my refund for months.",
+      "createdAt": "2025-12-16T08:00:00Z"
+    },
+    {
+      "_id": "comment2",
+      "postId": "post1",
+      "userId": "user11",
+      "comment": "Did you try filing a complaint with consumer protection? That worked for me.",
+      "createdAt": "2025-12-17T14:30:00Z"
+    },
+    {
+      "_id": "comment3",
+      "postId": "post2",
+      "userId": "user12",
+      "comment": "This website has scammed hundreds of people. We should organize a group complaint.",
+      "createdAt": "2025-12-11T09:45:00Z"
+    },
+    {
+      "_id": "comment4",
+      "postId": "post2",
+      "userId": "user13",
+      "comment": "I lost $300 to them last month. The tracking number they gave was from a 2019 shipment!",
+      "createdAt": "2025-12-12T11:20:00Z"
+    },
+    {
+      "_id": "comment5",
+      "postId": "post3",
+      "userId": "user14",
+      "comment": "Always buy luxury items from authorized dealers only. Lesson learned the hard way.",
+      "createdAt": "2025-12-09T16:10:00Z"
+    }
+  ],
+  "adminStats": {
+    "totalPosts": 245,
+    "pendingPosts": 12,
+    "totalUsers": 1847,
+    "totalEntities": 89,
+    "postsThisWeek": 34,
+    "newUsersThisWeek": 156
+  }
+}
