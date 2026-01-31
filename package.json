@@ -3,23 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@marsidev/react-turnstile": "^1.4.1",
     "lucide-react": "^0.562.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
+    "react-hot-toast": "^2.6.0",
     "react-router-dom": "^7.12.0",
+    "react-toastify": "^11.0.5",
     "shadcn": "^3.6.3",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.1.2",
-    "vite": "^7.3.1",
-    "tailwindcss": "^3.3.3",
+    "autoprefixer": "^10.4.23",
     "postcss": "^8.4.32",
-    "autoprefixer": "^10.4.23"
+    "tailwindcss": "^3.3.3",
+    "vite": "^7.3.1"
   }
 }

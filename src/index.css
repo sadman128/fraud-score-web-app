@@ -65,3 +65,25 @@
     @apply w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200;
   }
 }
+
+
+/* e.g., src/index.css or globals.css */
+.scrollbar-nice {
+  scrollbar-width: thin;                 /* Firefox */
+  scrollbar-color: #64748b transparent;   /* thumb, track */
+}
+
+.scrollbar-nice::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollbar-nice::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-nice::-webkit-scrollbar-thumb {
+  background-color: #64748b;
+  border-radius: 9999px;
+  border: 3px solid transparent; /* creates padding */
+  background-clip: content-box;
+}
